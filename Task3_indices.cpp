@@ -1,0 +1,15 @@
+#include <vector>
+using namespace std;
+
+// Finds and returns all indices where the key occurs.
+vector<int> findAllIndices(const vector<int>& arr, int key) {
+    vector<int> indices;
+
+    for (int i = 0; i < arr.size(); i++) {
+        if (arr[i] == key) {
+            indices.push_back(i);
+        }
+    }
+
+    return indices;
+}
